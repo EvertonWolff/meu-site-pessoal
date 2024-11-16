@@ -329,7 +329,13 @@ const ExperienceItem = styled.div`
   }
 `
 
-const ContactItem = ({ href, icon, label }) => (
+interface ContactItemProps {
+  href: string;
+  icon: React.ReactNode;
+  label: string;
+
+}
+const ContactItem: React.FC<ContactItemProps> = ({ href, icon, label }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">
     <ContactSkill>
       {icon}
@@ -337,7 +343,6 @@ const ContactItem = ({ href, icon, label }) => (
     </ContactSkill>
   </a>
 )
-
 export default function Home() {
   return (
     <>
