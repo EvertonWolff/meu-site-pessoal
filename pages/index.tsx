@@ -23,6 +23,7 @@ import {
   SiTailwindcss
 } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const Main = styled.main`
   display: flex;
@@ -330,10 +331,9 @@ const ExperienceItem = styled.div`
 `
 
 interface ContactItemProps {
-  href: string;
-  icon: React.ReactNode;
-  label: string;
-
+  href: string
+  icon: React.ReactNode
+  label: string
 }
 const ContactItem: React.FC<ContactItemProps> = ({ href, icon, label }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">
@@ -514,6 +514,7 @@ export default function Home() {
             />
           </ContactContainer>
         </Section>
+        <SpeedInsights />
       </Main>
     </>
   )
