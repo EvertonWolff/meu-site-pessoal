@@ -218,7 +218,6 @@ const DownloadButton = styled.a`
   font-weight: bold;
   transition: background-color 0.3s ease;
   width: 100%;
-  max-width: 300px;
   cursor: pointer;
 
   &:hover {
